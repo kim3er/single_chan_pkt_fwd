@@ -31,9 +31,7 @@ Dependencies
 ------------
 - SPI needs to be enabled on the Raspberry Pi (use raspi-config)
 - WiringPi: a GPIO access library written in C for the BCM2835 
-  used in the Raspberry Pi.
-  sudo apt-get install wiringpi
-  see http://wiringpi.com
+  used in the Raspberry Pi (http://wiringpi.com).
 - Run packet forwarder as root
 
 Installation (Raspberry Pi)
@@ -71,7 +69,7 @@ Configuration
 Defaults:
 
 - LoRa:   SF7 at 868.1 Mhz
-- Server: 54.229.214.112, port 1700  (The Things Network: croft.thethings.girovito.nl)
+- Server: 52.169.76.203, port 1700  (The Things Network: router.eu.thethings.network)
 
 Edit source node (main.cpp) to change configuration (look for: "Configure these values!").
 

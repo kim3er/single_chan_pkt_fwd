@@ -34,10 +34,13 @@ Dependencies
   used in the Raspberry Pi (http://wiringpi.com).
 - Run packet forwarder as root
 
-Installation (Raspberry Pi)
+Installation for Raspberry Pi (Stretch)
 ---------------------------
 
 ```
+sudo apt update
+sudo apt install git wiringpi
+git clone https://github.com/kim3er/single_chan_pkt_fwd.git
 sudo raspi-config
 ```
 
@@ -45,7 +48,7 @@ Activate SPI (5 Interfacing Options)
 
 ```
 sudo reboot now
-sudo apt-get install wiringpi
+cd single_chan_pkt_fwd
 make
 sudo ./single_chan_pkt_fwd
 ```
